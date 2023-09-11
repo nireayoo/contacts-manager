@@ -20,6 +20,9 @@
   "author": "Nire inspired by Dipesh Malvia",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "mongoose": "^7.5.0"
   }
 }
