@@ -12,6 +12,8 @@ app.use(express.urlencoded({extended: false}));
 mongoose.set("strictQuery", false);
 mongoose.connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
+    serverSelectionTimeoutMS: 6000,
+    maxPoolSize:10,
 },
 console.log("DB is now connected")).catch((err)=>{
     console.log(err);
