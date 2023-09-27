@@ -17,7 +17,7 @@ const mongoose = require('mongoose');
     }, 
     phone:{
         type: BigInt,
-        required : [true, 'Please add number'],
+        required : false,
     },
     DateOfBirth:{
         type: Date,

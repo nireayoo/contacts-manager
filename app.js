@@ -25,7 +25,7 @@ console.log("DB is now connected")).catch((err)=>{
 const PORT = 5000;
 
 app.use('/api/contacts', contactRoutes);
-app.use('/api/user', userRoutes);
+app.use('/api/users', userRoutes);
 app.use(errorHandler);
 app.listen(PORT, () =>{
     console.log(`Server running on port ${PORT}`);
